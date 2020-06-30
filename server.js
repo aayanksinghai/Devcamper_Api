@@ -32,6 +32,8 @@ app.use(express.static(path.join(__dirname,'public')))
 // Mount Routers
 app.use('/api/v1/bootcamps', require('./routes/bootcamp'))
 app.use('/api/v1/courses', require('./routes/courses'))
+app.use('/api/v1/auth', require('./routes/auth'))
+
 
 app.use(errorHandler)
 
