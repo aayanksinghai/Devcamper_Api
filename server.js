@@ -36,6 +36,8 @@ app.use(express.static(path.join(__dirname,'public')))
 app.use('/api/v1/bootcamps', require('./routes/bootcamp'))
 app.use('/api/v1/courses', require('./routes/courses'))
 app.use('/api/v1/auth', require('./routes/auth'))
+app.use('/api/v1/users', require('./routes/users'))
+
 
 
 app.use(errorHandler)
